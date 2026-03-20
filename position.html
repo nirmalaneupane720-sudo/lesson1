@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>float</title>
+        <style>
+            .box1{
+                position: static;
+                height: 200px;
+                width:300px;
+                background-color: rgb(132, 43, 43);
+            }
+            .box2{
+                height: 200px;
+                width: 300px;
+                position: relative;
+                top:40px;
+                left: 30px;
+                background-color: blueviolet;
+
+            }
+            .box3{
+              height: 100px;
+              position:fixed;
+              background-color: bisque;
+            }
+            .parent{
+                position: relative;
+                height: 100px;
+                width: 200px;
+                background-color: aquamarine;
+                padding: 15px;
+            }
+            .child{
+                position: absolute;
+                background-color: blue;
+                top: 20px;
+                right: 20px;
+                height: 120px;
+                width: 150px;
+
+
+            }
+
+        </style>
+    </head>
+    <body>
+  <div class="box1">this is static...</div>
+   <div class="box2">this is relative </div>
+  <div class="box3">this is fixed one</div> 
+  <div class="parent">
+    this is a mother
+    <div class="child">this is her child</div>
+
+  </div>
+    </body>
+</html>
